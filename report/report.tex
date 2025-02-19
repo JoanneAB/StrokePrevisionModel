@@ -1,0 +1,75 @@
+% ---------------------------------------------------------------------------------------------------------------
+\documentclass[paper=a4, fontsize=12pt]{article}
+\usepackage{lipsum}% http://ctan.org/pkg/lipsum
+\usepackage[explicit]{titlesec}% http://ctan.org/pkg/titlesec
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper,pdftex]{geometry}
+%\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage{array}
+\usepackage{wrapfig}
+\usepackage{pdfpages}
+\usepackage{xcolor}
+\usepackage{natbib}
+\usepackage{subfig}
+\usepackage{array,multirow}
+\usepackage{float}
+\usepackage{here}
+\usepackage{efbox,graphicx}
+\efboxsetup{linecolor=black,linewidth=0.7pt}
+
+% ------------------------------------------------------------------------------
+\definecolor{bleu}{rgb}{0, 0, 0.65}
+\definecolor{gris}{rgb}{0.86, 0.86, 0.86}
+\definecolor{vert}{rgb}{0.0, 0.5, 0.0}
+\newcommand{\red}{\textcolor{red}}
+\newcommand{\blue}{\textcolor{bleu}}
+
+\bibliographystyle{plainnat}
+
+\makeatletter
+  \def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
+\makeatother
+
+\def\Vhrulefill{\leavevmode\leaders\hrule height 0.8ex depth \dimexpr1.4pt-0.7ex\hfill\kern0pt}
+\titleformat{\section}{\bfseries\Large}{}{-25pt}{\noindent ~ \thesection.\quad#1~~\Vhrulefill}
+\titleformat{\subsection}{\large}{}{-2pt}{\thesubsection.\quad#1~~\textcolor{gris}{\vhrulefill{6pt}}}
+
+% ------------------------------------------------------------------------------
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}} % Horizontal rule
+\makeatletter % Title
+\def\printtitle{{\centering \@title\par}}
+\makeatother
+
+\makeatletter % Author
+\def\printauthor{{\centering \large \@author}}
+\makeatother
+
+% ------------------------------------------------------------------------------
+\title{\normalsize \textsc{} %Title page subtitle}
+\\[2.0cm]\HRule{0.5pt} \\
+\LARGE \textbf{\uppercase{Stroke prediction model}}
+\HRule{2pt} \\ [0.5cm]\vspace*{0.2cm}
+\Large{\textit{A24 [DA DE DS] Machine Learning with Python Labs\\SPOC students project\\Instructor: Hanna Abi Akl}}\\
+\vspace*{3.5cm}
+\normalsize}
+
+\author{Joanne ADAM\\Data ScienceTech Institut\\
+\texttt{joanne.adam@edu.dsti.institute}\\}
+
+
+% ------------------------------------------------------------------------------
+\begin{document}
+\thispagestyle{empty} \printtitle \vfill\printauthor
+\newpage\tableofcontents\newpage
+
+\input{introduction}
+\input{data_analysis}
+\input{feature_engineering}
+\input{modeling}
+\input{interpretation}
+\input{conclusion}
+
+\end{document}
