@@ -11,8 +11,8 @@ A full report is availaible ???.
 
 ## How to use it ?
 
-This study uses python libraries and can be run either using the jupyter-notebook project_stroke.ipynb or 
-the python script project_stroke.py and the library project_ML_DSTI.
+This study uses python libraries and can be run either using the jupyter-notebook [project_stroke.ipynb](https://github.com/JoanneAB/StrokePrevisionModel/blob/main/project_stroke.ipynb) or 
+the python script [project_stroke.py](https://github.com/JoanneAB/StrokePrevisionModel/blob/main/project_stroke.py) using the library [project_ML_DSTI](https://github.com/JoanneAB/StrokePrevisionModel/blob/main/project_ML_DSTI).
 
 ## Technology stack
 
