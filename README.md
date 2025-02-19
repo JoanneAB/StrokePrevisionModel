@@ -7,7 +7,7 @@ predict a stroke event for a patient. The model do however predicts a high rate 
 wich will lead to further clinical testing to patients that actually are not at risk of stroke. In 
 medical studies, such prediction is best. 
 
-A full report is availaible ???.
+A full report is availaible [report.pdf](https://github.com/JoanneAB/StrokePrevisionModel/blob/main/report/report.pdf).
 
 ## How to use it ?
 
