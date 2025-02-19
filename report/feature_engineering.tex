@@ -7,14 +7,13 @@
 % ---------------------------------------------------------------------------------------------------
 \subsubsection{'ever\_married' and 'residence\_type'}
 Two attributes ('ever\_married' and 'residence\_type') have two and only two alternative values and 
-can be represented using a boolean attribute.\\
+will be represented using a boolean attribute.\\
 
 % ---------------------------------------------------------------------------------------------------
 \subsubsection{'gender'}
 The attribute 'gender' can be represented as a boolean attribute however, one entry for 
-'gender' in the dataset is 'Other'. The values for this entry are presented in figure 
-\ref{figure_gender_other}. Because its 'stroke' value is in the over-represented category, this entry 
-is discarded.\\
+'gender' in the dataset is 'Other' (figure \ref{figure_gender_other}). Because its 'stroke' value is in 
+the over-represented category, this entry is discarded.\\
 
 \begin{figure}[H]
 \centering
@@ -27,8 +26,15 @@ is discarded.\\
 \subsubsection{'work\_type'}
 Because the values of the attribute 'work\_type' (\textit{i.e.} 'Private', Govt\_job', 
 'Never\_worked', 'children' and 'Self-employed') are independant and unrelated, new attributes are 
-created for each of the possible value. These new attribute are numerical, binary attributes. 
- 
+created for each of the possible value. These new attribute are numerical, binary attributes.
+\begin{itemize}
+ \item Private $\rightarrow$ job\_private  
+ \item Govt\_job $\rightarrow$ job\_government
+ \item Never\_worked $\rightarrow$ job\_never
+ \item children $\rightarrow$ job\_children
+ \item Self-employed $\rightarrow$ job\_selfemployed
+\end{itemize} 
+
 % ---------------------------------------------------------------------------------------------------
 \subsubsection{'smoking\_status'}
 The attribute 'smoking\_status' has four possible values : 'unknown', 'never', 'formerly' and 
@@ -61,7 +67,7 @@ themselves.
 \end{figure}
 
 Because the dataset and the number of attribute are not large, vector encoding is retained. Moreover, 
-this encoding brings the advantage of reducint biases in the data.\\ 
+this encoding brings the advantage of reducing biases in the data.\\ 
 
 The attribute 'smoker\_unknown' has $1544$ entries which correspond to the equivalent number of 
 missing values. Further analysis would be necessary to assign values to the missing values however, 

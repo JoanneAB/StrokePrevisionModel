@@ -73,22 +73,21 @@ smoker             & 0 (84\%), 1 (15\%) & 0 (84\%), 1 (16\%) \\
 % ----------------------------------------------------------------------------------------------------
 \subsection{Model training and evaluation using classification algorithms}
 
-Classification algorithms are applied to the dataset to predict the value of the 'stroke'. The 
-classifiers used are Logistic Regression, Random Forest and Multi-layer Perceptron. 
-Results for each of the algorithms are presented below.\\
+Classification algorithms are applied to the dataset to predict the value of 'stroke'. The classifiers 
+used are Logistic Regression, Random Forest and Multi-layer Perceptron.\\ 
 
 Several evaluation metrics are computed for each modeling and for the dataset with or without 
 oversampling :
 \begin{itemize}
  \item \textbf{Recall} $\in [0;1]$ : measures how much of the positive data are well recovered from the dataset.
  \item \textbf{Precision} $\in [0;1]$ : measures how much of the positive prediction are correct, 
- \item \textbf{F1-score} $\in [0;1]$ : informs on the performance of the prediction. Maximizing F1-score implies maximizing both the recall and precision.
+ \item \textbf{F1-score} $\in [0;1]$ : informs on the performance of the prediction. Maximizing F1-score implies maximizing both recall and precision.
  \item \textbf{Accuracy} $\in [0;1]$ : informs on the ability of the model to make a correct prediction.
 \end{itemize} 
 
 % ----------------------------------------------------------------------------------------------------
 \subsubsection{Logistic Regression}
-Logistic regression algorithm from the Python \texttt{sklearn} library search for a model that 
+Logistic regression algorithm from the Python \texttt{sklearn} library searches for a model that 
 minimizes the residual squared sum between the observations and the model using linear 
 approximation.\\
 
@@ -173,7 +172,7 @@ oversampled dataset.
 
 % ----------------------------------------------------------------------------------------------------
 \subsubsection{Random forest}
-Random Forest algorithm from the Python \texttt{sklearn} library search for a best-fitting model 
+Random Forest algorithm from the Python \texttt{sklearn} library searches for a best-fitting model 
 using decision tree classifiers on sub-samples of the dataset.\\ 
 
 Metrics presented in Table \ref{table_RF} and figure \ref{figure_metrics_RF} show that oversampling 
@@ -219,7 +218,7 @@ oversampled dataset.
 
 % ----------------------------------------------------------------------------------------------------
 \subsubsection{Multi-layer Perceptron}
-Multi-layer Perceptron algorithm from the Python \texttt{sklearn} library search for a best-fitting 
+Multi-layer Perceptron algorithm from the Python \texttt{sklearn} library searches for a best-fitting 
 model using non-linear neural networks.\\
 
 Metrics presented in Table \ref{table_MLP} and figure \ref{figure_metrics_MLP} show that oversampling improves the identification of the positive target (higher values of recall). Although some 

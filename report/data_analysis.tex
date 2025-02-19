@@ -3,7 +3,7 @@
 
 % ---------------------------------------------------------------------------------------------------
 \subsection{The dataset}
-The dataset consists of $5110$ entries. Each entry correspond to one person's personal and medical 
+The dataset consists of $5110$ entries. Each entry corresponds to one person's personal and medical 
 information. A representation of the first entries of the dataset is presented in figure 
 \ref{dataset_head}. The attributes, their possible values and frequencies are presented in tables 
 \ref{table_attributes_1} and \ref{table_attributes_2}.
@@ -54,16 +54,16 @@ stroke             & C & 0 (5861), 1 (249)\\
 
 % ---------------------------------------------------------------------------------------------------
 \subsection{Searching for outliers}
-The distribution of the numerical attributes enables the search of possible data outliers that could 
-alter the analysis. Figures \ref{dataset_describe} and \ref{hist_plots} present statistics and 
-distribution of numerical attributes. The numerical attributes are of interest : 'age', 
-'avg\_glucose\_level' and 'bmi'. \\
+The distribution of the numerical attributes enables the search for possible data outliers that could 
+alter the analysis. The numerical attributes of interest are : 'age', 'avg\_glucose\_level' and 'bmi'. 
+Figures \ref{dataset_describe} and \ref{hist_plots} present statistics and distribution of numerical 
+attributes. 
 
-The standard deviation of these attributes is always small compared to the mean which implies no 
-presence of outlier values. The plot distribution confirms this observation (figure \ref{hist_plots}) 
-for 'age' and 'avg\_glucose\_level' attributes. However, few values of BMI greater than 60 seems out 
+The standard deviation of these attributes is always small compared to the mean which could implies no 
+presence of outlier values. The plot distribution for 'age' and 'avg\_glucose\_level' attributes confirm 
+this observation (figure \ref{hist_plots}). However, few values of BMI greater than 60 seems out 
 of scale and are outliers. A body mass index of 60 is considered as hyper-obesity and is relatively 
-rare but possible condition. These date could be kept as true data. Cases of hyper-hyper-obesity 
+rare but possible condition. These data could be kept as true data. Cases of hyper-hyper-obesity 
 (bmi > 80) are however extremely rare and could be errors in the measurements. Figure \ref{large_bmi} 
 presents the entries of the dataset where bmi is greater than 90.
 
@@ -93,18 +93,18 @@ presents the entries of the dataset where bmi is greater than 90.
 
 % ---------------------------------------------------------------------------------------------------
 \subsection{Missing values}
-Figure \ref{dataset_describe} shows 201 missing values of bmi. The $1544$ 'Unknown' values of the 
-'smoking\_status' attribute as well as one 'Other' value for the 'gender' attribute can also be 
+Figure \ref{dataset_describe} shows that $201$ values of 'bmi' are missing. The $1544$ 'Unknown' values 
+of the 'smoking\_status' attribute as well as one 'Other' value for the 'gender' attribute can also be 
 considered as missing values. Section \ref{section_feature_engineering} on feature engineering will 
-prsent how these missing values are handled.
+present how these missing values are handled.
 
 
 % ---------------------------------------------------------------------------------------------------
 \subsection{Class imbalance}
 \label{section_imbalance}
 Three attributes relating to heath issues ('stroke', 'heart\_disease' and 'hypertension') are 
-bookean attributes. The figure \ref{pie_plots} presents the distribution of these attributes and 
-show a dataset imbalance problem. Indeed, the 0 values are well more represented than the 1 values. 
+boolean attributes. The figure \ref{pie_plots} presents the distribution of these attributes and 
+show a dataset imbalance problem. Indeed, the '0' values are well more represented than the '1' values. 
 
 \begin{figure}[H]
  \efbox{
